@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<script>
+   $(document).ready(function(){
+        $('#click').click(function(){
+            $('#clickEvent').html(alert('Clicked'));
+        });
+        $('#hide').click(function(){
+            $('#hideEvent').hide();
+        });
+        $('#show').click(function(){
+            $('#showEvent').show();
+        });
+        $('#toggle').click(function(){
+            $('#toggleEvent').toggle();
+        });
+        $('#slideDown').click(function(){
+            $('#slideDownEvent').slideDown();
+        });
+        $('#slideUp').click(function(){
+            $('#slideUpEvent').slideUp();
+        });
+        $('#slideToggle').click(function(){
+            $('#slideToggleEvent').slideToggle();
+        });
+        $('#fadeIn').click(function(){
+            $('#fadeInEvent').fadeIn();
+        });
+        $('#fadeOut').click(function(){
+            $('#fadeOutEvent').fadeOut();
+        });
+        $('#addClass').click(function(){
+            $('#addClassEvent').addClass();
+        });
+        $('#addClass').click(function(){
+            $('#addClassEvent').addClass('change');
+        });
+        $('#before').click(function(){
+            $('#beforeEvent').before('<h1> Hello World! <h1>');
+        });
+        $('#after').click(function(){
+            $('#afterEvent').after('<h1>Hello World!<h1>');
+        });
+        $('#append').click(function(){
+            $('#appendEvent').append('<h1>Appended!<h1>');
+        });
+        $('#html').click(function(){
+            $('#htmlEvent').html('<h1>Hello World!<h1>');
+        });
+        $('#attr').click(function(){
+            $('#attrEvent').attr('style','color:red');
+        });
+        $('#val').click(function(){
+            $('#valEvent').val('hello world');
+        });
+        $('#text').click(function(){
+            $('#textEvent').text('hello world');
+        });
+   });  
+</script>
+<body>
+    <div class="sidebar">
+        <a href="#click-div">.click()</a>
+        <a href="#hide-div">.hide()</a>
+        <a href="#show-div">.show()</a>
+        <a href="#toggle-div">.toggle()</a>
+        <a href="#slideDown-div">.slideDown()</a>
+        <a href="#slideUp-div">.slideUp()</a>
+        <a href="#slideToggle-div">.slideToggle()</a>
+        <a href="#fadeIn-div">.fadeIn()</a>
+        <a href="#fadeOut-div">.fadeOut()</a>
+        <a href="#addClass-div">.addClass()</a>
+        <a href="#before-div">.before()</a>
+        <a href="#after-div">.after()</a>
+        <a href="#append-div">.append()</a>
+        <a href="#html-div">.html()</a>
+        <a href="#attr-div">.attr()</a>
+        <a href="#val-div">.val()</a>
+        <a href="#text-div">.text()</a>
+    </div>
+    <div class="main">
+        <h1>My Mini Documentation</h1>
+        <div id="click-div">
+            <h1>Click</h1>
+            <button id="click">.click()</button>
+            <p id="clickEvent">Binds an event handler to the "click" javavascript event, or trigger that event on an elemenent.Example Clicking the button will display alert box.</p>
+        </div>
+        <div id="hide-div">
+            <h1>Hide</h1>
+            <button id="hide">.hide()</button>
+            <p id="hideEvent">Hides the matched elements.Example Hiding this paragraph.</p>
+        </div>
+        <div id="show-div">
+            <h1>Show</h1>
+            <button id="show">.show()</button>
+            <p >Displays the matched elements. Example:Showing the hidden paragraph here. <h1 id="showEvent">hidden paragraph</h1></p>
+        </div>
+        <div id="toggle-div">
+            <h1>Toggle</h1>
+            <button id="toggle">.toggle()</button>
+            <p id="toggleEvent">Display or hide the matched elements.</p>
+        </div>
+        <div id="slideDown-div">
+            <h1>.slideDown()</h1>
+            <button id="slideDown">.slideDown()</button>
+            <p>Display the matched elements with a sliding motion.<h1 id="slideDownEvent">I'm going down</h1></p>
+        </div>
+        <div id="slideUp-div">
+            <h1>.slideUp()</h1>
+            <button id="slideUp">.slideUp()</button>
+            <p >Hide the matched elements with a sliding motion.<h1 id="slideUpEvent">I will go up</h1></p>
+        </div>
+        <div id="slideToggle-div">
+            <h1>.slideToggle()</h1>
+            <button id="slideToggle">.slideToggle()</button>
+            <p id="slideToggleEvent">Display or hide the matched elements with a sliding motion.</p>
+        </div>
+        <div id="fadeIn-div">
+            <h1>.fadeIn()</h1>
+            <button id="fadeIn">.fadeIn()</button>
+            <p id="fadeInEvent">Display the matched elements by fading them to opaque.</p>
+        </div>
+        <div id="fadeOut-div">
+            <h1>.fadeOut()</h1>
+            <button id="fadeOut">.fadeOut()</button>
+            <p id="fadeOutEvent">Hide the matched elements by fading them to transparent.</p>
+        </div>
+        <div id="addClass-div">
+            <h1>.addClass()</h1>
+            <button id="addClass">.addClass()</button>
+            <p id="addClassEvent">Adds the specified class(es) to each element in the set of matched elements.</p>
+        </div>
+        <div id="before-div">
+            <h1>.before()</h1>
+            <button id="before">.before()</button>
+            <p id="beforeEvent">Insert content, specified by the parameter, before each element in the set of matched elements</p>
+        </div id="">
+        <div id="after-div">
+            <button id="after">.after()</button>
+            <h1>.after()</h1>
+            <p id="afterEvent">Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+        </div>
+        <div id="append-div">
+            <h1>.append()</h1>
+            <button id="append">.append()</button>
+            <p id="appendEvent">insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+        </div>
+        <div id="html-div">
+            <h1>.html()</h1>
+            <button id="html">.html()</button>
+            <p id="htmlEvent">Get the HTML contents of the first element in the set of matched elements.</p>
+        </div>
+        <div id="attr-div">
+            <h1>.attr()</h1>
+            <button id="attr">.attr()</button>
+            <p id="attrEvent">Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+        </div>
+        <div id="val-div">
+            <h1>.val()</h1>
+            <button id="val">.val()</button>
+            <p >Get the current value of the first element in the set of matched elements.</p>
+            <input type="text" id="valEvent">
+        </div>
+        <div id="text-div">
+            <h1>.text()</h1>
+            <button id="text">.text()</button>
+            <p id="textEvent">Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
+        </div>
+    </div>
+</body>
+</html>
